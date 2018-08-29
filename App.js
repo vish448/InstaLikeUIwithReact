@@ -15,7 +15,7 @@ const AppStackNavigator = StackNavigator({
 })
 
 
-export default class App extends Component {
+export default class App extends Component<{}> {
   render() {
     return (
       <AppStackNavigator />
