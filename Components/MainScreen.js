@@ -43,6 +43,23 @@ const AppTabNavigator = TabNavigator({
   ProfileTab : {
     screen: ProfileTab
   }
+},{
+  animationEnabled:true,
+  swipeEnabled:true,
+  tabBarPositions:'bottom',
+  tabBarOptions:{
+    style:{
+      ...Platform.select({
+        android:{
+          backgroundColor:'white'
+        }
+      })
+    },
+    activeTintColor: '#000',
+    inactiveTintColor:'#d1cece',
+    showLabel:false,
+    showIcon:true
+  },
 });
 
 const styles = StyleSheet.create({
