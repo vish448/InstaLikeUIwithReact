@@ -10,6 +10,8 @@ import LikesTab from './AppTabNavigator/LikesTab.js';
 import ProfileTab from './AppTabNavigator/ProfileTab.js';
 
 
+
+
 class MainScreen extends Component {
 
   static navigationOptions= {
