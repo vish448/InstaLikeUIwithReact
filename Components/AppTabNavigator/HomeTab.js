@@ -26,8 +26,11 @@ class HomeTab extends Component {
         <Content>
           <View style={{height:100}}>
             <View style={{flex:1,justifyContent: 'space-between',flexDirection: 'row',alignItems: 'center',paddingHorizontal: 7}}>
-              <Text>Stories</Text>
-              <Text>Watch All</Text>
+              <Text style={{fontWeight: '800'}}>Stories</Text>
+              <View style={{flexDirection: 'row'}}>
+                <Icon name="md-play" style={{fontSize:14,paddingRight:5}}/>
+                <Text>Watch All</Text>
+              </View>
             </View>
             <View style={{flex:3}}>
               <ScrollView
@@ -38,12 +41,13 @@ class HomeTab extends Component {
                   paddingStart:5,
                   paddingEnd:5
                 }}>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
-                <Thumbnail source={require('../../assets/me.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb1.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb2.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb3.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb4.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb5.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb6.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
+                <Thumbnail source={require('../../assets/thumb7.jpg')} style = {{marginHorizontal:5,borderColor:'pink',borderWidth:2}}/>
 
               </ScrollView>
             </View>
