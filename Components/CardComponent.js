@@ -12,6 +12,14 @@ import {Card, CardItem,Thumbnail,Body,Left,Right,Button,Icon} from 'native-base'
 
  class CardComponent extends Component {
   render() {
+
+    const images = {
+      'paint' : '../assets/paint.jpg',
+      'rafa1' : '../assets/rafa1.jpg',
+      'rafa2' : '../assets/rafa2.jpg',
+      'rafa3' : '../assets/rafa3.jpg',
+    }
+
     return (
       <Card>
         <CardItem>
