@@ -14,10 +14,10 @@ import {Card, CardItem,Thumbnail,Body,Left,Right,Button,Icon} from 'native-base'
   render() {
 
     const images = {
-      'paint' : '../assets/paint.jpg',
-      'rafa1' : '../assets/rafa1.jpg',
-      'rafa2' : '../assets/rafa2.jpg',
-      'rafa3' : '../assets/rafa3.jpg',
+      'paint' : require('../assets/paint.jpg'),
+      'rafa1' : require('../assets/rafa1.jpg'),
+      'rafa2' : require('../assets/rafa2.jpg'),
+      'rafa3' : require('../assets/rafa3.jpg'),
     }
 
     return (
@@ -32,7 +32,7 @@ import {Card, CardItem,Thumbnail,Body,Left,Right,Button,Icon} from 'native-base'
           </Left>
         </CardItem>
         <CardItem cardBody>
-          <Image source={require('../assets/paint.jpg')} style={{height:200, width: null,flex:1}} />
+          <Image source={images[this.props.imageSource]} style={{height:200, width: null,flex:1}} />
         </CardItem>
         <CardItem style={{height:30}}>
           <Left>
@@ -48,7 +48,7 @@ import {Card, CardItem,Thumbnail,Body,Left,Right,Button,Icon} from 'native-base'
           </Left>
         </CardItem>
         <CardItem style={{height:40}}>
-          <Text>93 Likes</Text>
+          <Text>{this.props.likes} Likes</Text>
         </CardItem>
         <CardItem>
           <Body>
