@@ -10,7 +10,7 @@ import {
 
 import CardComponent from '../CardComponent';
 
-import {Container, Content, Icon, Thumbnail} from 'native-base';
+import {Container, Content, Icon, Thumbnail, Header,Left, Right,Body} from 'native-base';
 
 class HomeTab extends Component {
 
@@ -23,6 +23,11 @@ class HomeTab extends Component {
   render() {
     return (
       <Container style={styles.container}>
+      <Header>
+        <Left><Icon name="ios-camera-outline" style={{paddingLeft: 10}} /></Left>
+        <Body><Text style={{fontSize: 18}}>Instagram</Text></Body>
+        <Right><Icon name="ios-send-outline" style={{paddingRight:10}} /></Right>
+      </Header>
         <Content>
           <View style={{height:100}}>
             <View style={{flex:1,justifyContent: 'space-between',flexDirection: 'row',alignItems: 'center',paddingHorizontal: 7}}>
