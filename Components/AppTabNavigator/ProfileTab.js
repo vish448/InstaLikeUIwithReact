@@ -58,6 +58,7 @@ class ProfileTab extends Component {
   }
 
   segmentClicked = (index) =>{
+    console.log('segment Clicked')
     this.setState({
       activeIndex: index
     })
@@ -66,7 +67,7 @@ class ProfileTab extends Component {
   renderSectionOne = () => {
     return images.map((image, index) => {
       return(
-        <View key={index} style={[ {width:(width)/3}, {height:(height)/3}]} >
+        <View key={index} style={[ {width:(width)/3}, {height:(height)/6}, {marginBottom: 2}, index % 3 !==0 ? {paddingLeft: 2} : {paddingLeft:0}]} >
           <Image source={image} style={{flex:1, width: undefined, height:undefined}} />
         </View>
       )
@@ -79,9 +80,16 @@ class ProfileTab extends Component {
       <View style={{flexWrap: 'wrap',flexDirection: 'row'}}>
         {this.renderSectionOne()}
       </View>
-    )
+     )
+    }
+    else if(this.state.activeIndex == 1){
+      return(
+        <View style={{flexWrap: 'wrap',flexDirection: 'row'}}>
+          {this.renderSectionOne()}
+        </View>
+      )
+    }
   }
-}
 
   render() {
     return (
