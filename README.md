@@ -13,7 +13,7 @@ This repository is created for practicing creating Instagram like UI with React 
   
   -Start NPM by running npm start via terminal in your project folder
   
-  -Run react-native run-ios
+  -Run react-native run-ios in your terminal
 
 ## Screenshots
 <img width="424" alt="hometab" src="https://user-images.githubusercontent.com/1841822/44961197-f3221200-aeda-11e8-876c-31d329a1fff8.png">
